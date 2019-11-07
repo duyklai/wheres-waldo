@@ -7,3 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 photos = Photo.create([{ name: "Beach", image_url: "beach.jpg"}])
+
+characters = Character.create([{ name: "Waldo", pos_x: 903, pos_y: 414, photo_id: 1}])

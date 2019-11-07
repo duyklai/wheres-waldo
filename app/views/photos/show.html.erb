@@ -3,3 +3,11 @@
 <%= image_tag @photo.image_url, class: "photo-image" %>
 
 <div class="target-outline"></div>
+
+<% @photo.characters.each do |character| %>
+  <%= content_for :head do %>
+    <%= tag :meta, :name => character.name, 
+                    :pos_x => character.pos_x,
+                    :pos_y => character.pos_y %>
+  <% end %>
+<% end %>

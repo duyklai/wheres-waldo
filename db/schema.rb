@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_11_06_013016) do
     t.integer "pos_y"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "puzzle_id"
+    t.integer "photo_id"
   end
 
   create_table "photos", force: :cascade do |t|
