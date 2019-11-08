@@ -7,6 +7,7 @@
   <% end %>
 <% end %>
 
+<% content_for :body_class, "photos-show" %>
 <div class="header-container">
 
   <div class="return-container">
@@ -26,4 +27,3 @@
 <div class="photo-container">
   <%= image_tag @photo.image_url, class: "photo-image" %>
 </div>
-
