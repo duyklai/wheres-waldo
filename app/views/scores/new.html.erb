@@ -1,6 +1,6 @@
 <div class="score-form-container">
   <h2>You found him!</h2>
-  <h3>Add your score to the highscores table</h3>
+  <h3>Enter your name and submit your score</h3>
   <%= form_for @score, url: scores_path, html: { method: "post",
                                                  class: "score-form" } do |f| %>
     <%= f.label :name, "Name: " %>

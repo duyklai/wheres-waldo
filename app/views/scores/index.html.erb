@@ -1,26 +1,26 @@
-<div class="score-title title">
+<div class="scores-title">
   <h1><%= @photo.name %> High Scores</h1>
 </div>
 
-<div class="scores">
-  <table class="scores-list">
+<div class="scores-div">
+  <table class="scores-table">
     <tr>
       <th></th>
       <th>Name</th>
-      <th>Time (sec)</th>
+      <th>Time</th>
     </tr>
-    <% count = 1 %>
+    <% rank = 1 %>
     <% @scores.each do |score| %>
       <tr>
-        <td><%= count %></td>
+        <td><%= rank %>)</td>
         <td><%= score.name %></td>
         <td><%= score.score %></td>
       </tr>
-      <% count += 1 %>
+      <% rank += 1 %>
     <% end %>
-  <table>
+  </table>
 </div>
 
-<div class="score-home-link">
-  <h3><%= link_to "Return to Home", root_path %></h3>
+<div class="home-link">
+  <%= link_to "<< Return to Home", root_path %>
 </div>
