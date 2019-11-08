@@ -1,1 +1,16 @@
-<h1>Where's Waldo<h1>
+<div class="home-title">
+  <h1>Where's Waldo?</h1>
+</div>
+
+<div class="photos-container">
+  <h2>Choose a photo:</h2>
+  <table class="photos-table">
+    <% @photos.each do |photo| %>
+      <tr>
+        <td><%= image_tag photo.image_url, class: "photo-thumbnail" %></td>
+        <td><%= link_to photo.name, photo_path(photo.id) %></td>
+        <td><%= link_to "Highscores", scores_path(photo_id: photo.id) %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
