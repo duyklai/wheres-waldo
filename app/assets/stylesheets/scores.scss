@@ -12,21 +12,78 @@
   margin-left: -200px;
   padding: 10px;
   width: 350px;
-  height: 140px;
+  height: 90px;
 
   font-size: 20px;
 
-  z-index: 10;
   border: 2px solid black;
   box-shadow: 2px 2px 2px #000;
   background: #fff;
 }
 
 .score-form-container h2 {
-  margin-bottom: 10px;
   font-weight: bold;
 }
 
 .score-form {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.scores-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffa71a;
+  margin: 25px auto 25px auto;
+  letter-spacing: 1px;
+}
+
+.scores-table {
+  margin: 0 auto;
+  background-color: #4d4d4d;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 2px black;
+  font-size: 20px;
+
+  th {
+    font-size: 25px;
+    color: white;
+  }
+
+  th:first-child {
+    border-bottom: none;
+  }
+
+  th,
+  td {
+    padding: 15px 40px 15px 40px;
+    text-align: left;
+  }
+
+  tr:hover {
+    background-color: #ffa71a;
+  }
+
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.home-link {
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.home-link a {
+  color: white;
+}
+
+.home-link a:hover {
+  color: #ffa71a;
 }

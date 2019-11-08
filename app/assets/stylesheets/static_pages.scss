@@ -1,3 +1,49 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.home-title {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #ffa71a;
+  text-shadow: 3px 3px 5px black;
+}
+
+.photos-container {
+  text-align: center;
+  color: #ffa71a;
+}
+
+.photos-container h2 {
+  font-size: 25px;
+  margin: 10px 0 10px 0;
+}
+
+.photo-thumbnail {
+  width: 300px;
+  height: auto;
+}
+
+.photos-table {
+  margin: 0 auto;
+  background-color: #4d4d4d;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 2px black;
+  font-size: 20px;
+
+  td {
+    vertical-align: middle;
+    padding: 15px 10px 15px 10px;
+    font-size: 20px;
+  }
+
+  td a {
+    color: white;
+  }
+
+  td a:hover {
+    color: #ffa71a;
+  }
+}
