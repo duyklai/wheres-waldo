@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  if (!document.querySelector('.photos-show')) return;
   // Handler when the DOM is fully loaded
   const waldo_image = document.querySelector('.photo-image');
   const photo_container = document.querySelector('.photo-container');
