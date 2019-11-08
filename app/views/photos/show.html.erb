@@ -1,13 +1,29 @@
-<h1><%= @photo.name %></h1>
-
-<%= image_tag @photo.image_url, class: "photo-image" %>
-
-<div class="target-outline"></div>
-
 <% @photo.characters.each do |character| %>
   <%= content_for :head do %>
     <%= tag :meta, :name => character.name, 
-                    :pos_x => character.pos_x,
-                    :pos_y => character.pos_y %>
+                   :pos_x => character.pos_x,
+                   :pos_y => character.pos_y,
+                   :photo_id => character.photo_id %>
   <% end %>
 <% end %>
+
+<div class="header-container">
+
+  <div class="return-container">
+    <%= link_to "<< Return to Home", root_path %>
+  </div>
+
+  <div class="title-container">
+    <h1 class="title"><%= @photo.name %></h1>
+  </div>
+
+  <div class="time-container">
+    <div class="timer">Timer: 0</div>
+  </div>
+
+</div>
+
+<div class="photo-container">
+  <%= image_tag @photo.image_url, class: "photo-image" %>
+</div>
+

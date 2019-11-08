@@ -1,10 +1,80 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #292929;
+}
+
+.header-container {
+  text-align: center;
+  margin-top: 5px;
+  color: #ffa71a;
+  letter-spacing: 1px;
+}
+
+.title-container,
+.time-container,
+.return-container {
+  display: inline-block;
+  width: 33%;
+}
+
+.title-container h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.time-container {
+  font-size: 30px;
+}
+
+.return-container a {
+  font-size: 20px;
+  color: white;
+}
+
+.return-container a:hover {
+  color: #ffa71a;
+}
+
+.photo-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.photo-image {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid white;
+  width: 70%;
+}
+
 .target-outline {
   position: absolute;
   visibility: hidden;
   width: 30px;
   height: 50px;
   border: 3px solid red;
+}
+
+.found-check-message-div {
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+
+  width: 140px;
+  height: 30px;
+  margin-top: -25px;
+  margin-left: -90px;
+  padding-top: 5px;
+
+  font-size: 20px;
+
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px #000;
+  background: #fff;
 }

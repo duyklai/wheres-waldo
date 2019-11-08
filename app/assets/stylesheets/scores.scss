@@ -1,0 +1,32 @@
+// Place all the styles related to the scores controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.score-form-container {
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin-top: -100px;
+  margin-left: -200px;
+  padding: 10px;
+  width: 350px;
+  height: 140px;
+
+  font-size: 20px;
+
+  z-index: 10;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px #000;
+  background: #fff;
+}
+
+.score-form-container h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.score-form {
+  margin-top: 30px;
+}

@@ -1,0 +1,12 @@
+<div class="score-form-container">
+  <h2>You found him!</h2>
+  <h3>Add your score to the highscores table</h3>
+  <%= form_for @score, url: scores_path, html: { method: "post",
+                                                 class: "score-form" } do |f| %>
+    <%= f.label :name, "Name: " %>
+    <%= f.text_field :name %>
+    <%= f.hidden_field :score, value: params['score'] %>
+    <%= f.hidden_field :photo_id, value: params['photo_id'] %>
+    <%= f.submit "Submit" %>
+  <% end %>
+</div> 
