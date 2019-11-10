@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hideMessage();
         mouseX = e.pageX;
         mouseY = e.pageY;
-        console.log(mouseX, mouseY);
+
         target_outline.style.visibility = 'visible';
         target_list_div.style.visibility = 'visible';
         // Subtract 2 to "center" mouse around box
