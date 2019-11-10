@@ -1,6 +1,7 @@
 <% @photo.characters.each do |character| %>
   <%= content_for :head do %>
-    <%= tag :meta, :name => character.name, 
+    <%= tag :meta, :id => 'character',
+                   :name => character.name, 
                    :pos_x => character.pos_x,
                    :pos_y => character.pos_y,
                    :photo_id => character.photo_id %>
