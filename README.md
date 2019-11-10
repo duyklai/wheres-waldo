@@ -8,7 +8,7 @@ Building a "photo-tagging app" with JavaScript as front-end and Ruby on Rails as
 
 User can select an image from the home page by clicking on the name of the photo. Once the page loads, the user can begin to find the characters in the image. The first two photo will only feature Waldo. While the last two photo will feature the full cast of characters (Waldo, Wenda, Wizard, and Odlaw). Once the user thinks they have found one of the character, they can click on the photo. A black outline box will appear around their mouse position with a list of possible character(s). The player must identify who they have found and click on the name. User can return to the homepage from here if they wish to start on another photo. Once the user found all the character(s) in the photo, the page will prompt the user to input a name to enter the highscore board. Once submitted, the page will automatically redirect the user to the scoreboard page. User can continue to play another photo or try again for faster time.
 
-Current [Demo]().
+Current [Demo](https://tranquil-castle-83602.herokuapp.com/).
 
 ## How to build
 
